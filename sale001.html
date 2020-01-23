@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Редактирование/добавление акции</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+ <ul class="nav nav-pills" >
+    <li class="nav-item">
+        <a class="nav-link " href="clients.html">Клиенты</a>
+      </li>
+      <li class="nav-item">
+              <a href="zayavki.html">Заказы</a>
+            
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="joppers.html">Сотрудники</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="avto.html">Авто</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" href="sales.html">Акции</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="uslugi.html">Услуги</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="otzyvy.html">Отзывы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="finan.html">Финансы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+      </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+            
+            <li class="breadcrumb-item"><a href="sales.html">Акции</a></li>
+            <li class="breadcrumb-item activem"><a href="#">Редактирование акции</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 60%; flex-direction: column;">
+                <div class="card" style="width: 90%; margin: auto;">
+                        <h2 style="margin-left: 10px;">Акция 001 </h2>
+                        <div class="row">
+                                <div class="col-sm-4"> 
+
+                                        <img src="image\st.jpg" class="float-left" style="width: 200px; height: 150px; margin-left: 10px;">
+                                        <a href=# ><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin: 5px 0 0 145px; font-size: 20px;"></span></a>
+                                        <a href=#><span class="glyphicon glyphicon-trash" aria-hidden="true" style="font-size: 20px; margin-left: 8px;"></span></a>
+                                </div>
+                                <div class="col-sm-8">
+                              
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <td>
+                                    Название акции
+                                    </td>
+                                    <td>
+                                            <input type="text" class="form-control" id="usr" style="width: 300px;">
+                                    </td>
+                                  </tr>
+                              
+                    <tr>
+                        <td>
+                            Описание
+                        </td>
+                        <td>
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </td>
+                    </tr>
+                
+                    <tr>
+                        <td>
+                            Дата начала
+                        </td>
+                        <td>
+                                <input type="date" class="form-control" style="width: 150px;">
+                        </td>
+                        </tr>
+
+                            <tr>
+                                    <td>
+                                        Дата конца
+                                    </td>
+                                    <td>
+                                            <input type="date" class="form-control" style="width: 150px;">
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                        <td>
+                                        Скидка, %
+                                        </td>
+                                        <td>
+                                                <input type="text" class="form-control" id="usr" style="width: 90px;">
+                                        </td>
+                                        </tr>
+                                
+                                        <tr>
+                                            <td>
+                                            На услугу
+                                            </td>
+                                            <td>
+                                                    <select class="form-control">
+                                                            <option selected>Доставка посылок</option>
+                                                            <option value="1">Доставка грузов</option>
+                                                            <option value="2">Доставка документов</option>
+                                                          </select>
+                                            </td>
+                                            </tr>
+                                       </tbody>
+                        </table>
+                    </div>
+                        <div class="row" style="margin-left: 270px; margin-bottom: 10px;">
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                       
+                    </div>
+
+                       
+                                          </div>
+                                 
+                    </div>
+
+
+</div>
+</main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

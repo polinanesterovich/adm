@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Редактировать авто</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+ <ul class="nav nav-pills" >
+    <li class="nav-item">
+        <a class="nav-link " href="clients.html">Клиенты</a>
+      </li>
+      <li class="nav-item">
+              <a href="zayavki.html">Заказы</a>
+            
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="joppers.html">Сотрудники</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="avto.html">Авто</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="sales.html">Акции</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="uslugi.html">Услуги</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="otzyvy.html">Отзывы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="finan.html">Финансы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="lkadm.html" id="i">Личный кабинет</a>
+      </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+          
+            <li class="breadcrumb-item"><a href="lkadm.html">Администрирование</a></li>
+            <li class="breadcrumb-item"><a href="avto.html">Авто</a></li>
+            <li class="breadcrumb-item activem"><a href="#">Авто 001</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="conta" >
+                <div class="card" style="width: 90%; margin: auto;">
+                        <h2 style="margin-left: 10px;">Авто 001 </h2>
+                        
+                        <table class="table" >
+                            <thead>
+                                <tr>
+                                    <td>
+                                            Название авто
+                                    </td>
+                                    <td>
+                                            <p id="namea">Лада </p>
+                                    </td>
+                                  </tr>
+                              
+                                  <tr>
+                                      <td>
+                                        Номер
+                                      </td>
+                                      <td>
+                                        <p id="nom"> 111</p>
+                                      </td>
+                                    </tr>
+                               
+                                    <tr>
+                                        <td>
+                                                Описание:
+                                        </td>
+                                        <td>
+                                               <p id="desc"> вот так вот</p>
+                                       </td>
+                                      </tr>
+      
+                                           
+                                       </tbody>
+                        </table>
+
+
+                        
+
+
+
+
+
+                        <div class="row" id="e" >
+                          <a  id="Modal3"><button type="button" class="btn btn-outline-secondary" style="margin-right: 10px;">Удалить</button></a>
+                          <a  id="Modal"><button type="button" class="btn btn-primary" style="margin-right: 15px; margin-left: 20px;">Редактировать</button></a>
+                            <a href="zayavki.html"> <button type="button" class="btn btn-primary">Показать заявки</button></a>
+                            <a href="avtoOtsled.html"> <button type="button" class="btn btn-primary" style="margin-left: 15px;">Отследить авто</button></a>
+                        </div>
+                       
+
+                           <!-- HTML-код модального окна-->
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                 
+                  <h4 class="modal-title" style="margin-top: 5px;">Редактировать авто</h4>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                      <div class="container" style="display: flex; justify-content: center; width: 100%; flex-direction: column;">
+                              <div class="card" style="width: 100%; margin: auto;">
+                                      <h2 style="margin-left: 10px;">Авто 001 </h2>
+                                      
+                                      <table class="table" >
+                                          <thead>
+                                              <tr>
+                                                  <td>
+                                                          Название авто
+                                                  </td>
+                                                  <td>
+                                                          <input type="text"  class="form-control" id="output" style="width: 300px;">
+                                                  </td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td>
+                                                          Номер
+                                                    </td>
+                                                    <td>
+                                                          <input type="text" class="form-control" id="number" style="width: 300px;">
+                                                    </td>
+                                                  </tr>
+                                             
+                                                  <tr>
+                                                      <td>
+                                                              Описание:
+                                                      </td>
+                                                      <td>
+                                                              <textarea class="form-control" rows="5" id="opisanye"></textarea>
+                                                     </td>
+                                                    </tr>
+                    
+                                                         
+                                                     </tbody>
+                                      </table>
+                                     
+                  <!-- <p>Основная форма&hellip;</p> -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                  <button type="button" id="save" class="btn btn-primary">Сохранить</button>
+                </div>
+              </div><!-- /.модальное окно-Содержание -->  
+            </div><!-- /.модальное окно-диалог -->  
+
+
+
+           
+              </div>
+       
+      <!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
+      <script>
+      $(document).ready(function(){ 
+          
+        //при нажатию на любую кнопку, имеющую класс .btn
+        $("#Modal").click(function(e) {
+          //открыть модальное окно с id="myModal"
+          // $("#myModal").modal('show');
+          // $("#uid").val($editRow.data('user-id'));
+  
+        $("#output").val($("#namea").text());
+        $("#number").val($("#nom").text());
+        $("#opisanye").val($("#desc").text());
+        
+
+
+        $("#myModal").modal('show');
+});
+        $("#save").click(function(){
+          $("#namea").text($("#output").val());
+          $("#nom").text($("#number").val());
+          $("#desc").text($("#opisanye").val());
+        $(this).closest('.modal').modal('hide');})
+
+        $("#Modal3").click(function(e) {
+          //открыть модальное окно с id="myModal"
+          // $("#myModal").modal('show');
+          // $("#uid").val($editRow.data('user-id'));
+  
+        
+
+
+        $("#myModal1").modal('show');
+});
+        });
+    
+      </script>
+
+
+       </div>
+</div>
+
+  <!-- HTML-код модального окна-->
+  <div id="myModal1" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+           
+            <h4 class="modal-title" style="margin-top: 5px;">Подтверждение удаления</h4>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+               <p>Вы уверенны, что хотите удалить объект?</p>
+            <!-- <p>Основная форма&hellip;</p> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Да</button>
+            <button type="button" id="save" class="btn btn-primary" data-dismiss="modal">Отмена</button>
+          </div>
+        </div><!-- /.модальное окно-Содержание -->  
+      </div><!-- /.модальное окно-диалог -->  
+
+
+</main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

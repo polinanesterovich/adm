@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <title>Сотрудники</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+ 
+
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+                <a class="nav-link " href="clients.html">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                      <a href="zayavki.html">Заказы</a>
+                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="joppers.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="avto.html">Авто</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="sales.html">Акции</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="uslugi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="otzyvy.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="finan.html">Финансы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+              </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+            
+            <li class="breadcrumb-item"><a href="admorders.html">Личный кабинет</a></li>
+            <li class="breadcrumb-item activem"><a href="admworkers.html">Сотрудники</a></li>			  
+            
+        </ul> 
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 50%; flex-direction: column;">
+            <div class="row">
+                    <div class="col-sm-4"><h2>Сотрудники</h2> </div>
+                    <div class="col-sm-8">
+                        <a ><button type="button" class="btn btn-primary" id="Modal" style="margin-left: 270px; margin-top: 30px;" >Добавить нового</button></a></div>
+                    </div>
+                    
+        <d                </div>
+                <legend class="w-auto">Фильтр и поиск<a href="" class="op" data-toggle="collapse" style="margin-left: 330px; font-size: 14px;">Скрыть/Показать</a></legend>
+                <div class="open">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">ФИО</label>
+        <div class="row">
+            
+                <div class="col"> 
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Иванов Иван Иванович">
+                </div>
+                <div class="col">
+                    <select class="form-control">
+                            <option selected>По алфавиту</option>
+                            <option value="1" >В обратном порядке</option>
+                        </select>
+                    </div>
+                </div>                        
+            </div>
+            <div class="form-group">
+                    <label for="formGroupExampleInput">ID</label>
+        <div class="row">
+            
+                <div class="col"> 
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="12355">
+                </div>
+                <div class="col">
+                    <select class="form-control">
+                            <option selected>По возрастанию</option>
+                            <option value="1" >По убыванию</option>
+                        </select>
+                    </div>
+                </div>                        
+            </div>
+
+            <div class="form-group">
+                    
+        <div class="row">
+            
+                <div class="col"> 
+                    <label for="formGroupExampleInput">Показывать</label>
+                    <select class="form-control">
+                                <option selected>Всех</option>
+                                <option value="1" >Администраторов</option>
+                                <option value="2" >Грузчиков</option>
+                            </select>
+                </div>
+                <div class="col">
+                        <label for="formGroupExampleInput">Услуга</label>
+                        <select class="form-control">
+                            <option selected>Доставка грузов</option>
+                            <option value="1" >Доставка посылок</option>
+                            <option value="2" >Доставка документов</option>
+                        </select>
+                    </div>
+                </div>                        
+            </div>
+            <button type="button" class="btn btn-primary" style="margin: 0 0 10px 270px;">Поиск</button>
+                </div>
+            </form>
+<div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+<div class="card-header"> <h4 class="card-title"> <a href="j001.html">Иванов Иван Иванович</a> 
+    <!-- <a href="j001ch.html"><button type="button" class="btn btn-primary" style="margin-left: 81%;">Изменить</button></a>--></h4></div> 
+<div class="card-body">
+    
+        <table class="table" >
+                <thead>
+                    <tr>
+                        <td>
+                        ID
+                        </td>
+                        <td>
+                            001
+                        </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                Телефон
+                            </td>
+                            <td>
+                                89234234344
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                E-mail
+                            </td>
+                            <td>
+                                <p> psfdsdf@mail.com</p>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                                Должность
+                            </td>
+                            <td>
+                                Грузчик
+                            </td>
+                            </tr>
+
+                          
+                            </tbody>
+            </table>
+            <!-- <div class="row" style="margin-left: 270px; margin-bottom: 10px;">
+                    <a href="finan.html"><button type="button" class="btn btn-primary" style="margin-left: 50px;">Посмотреть заработок</button></a> 
+                    <button type="button" class="btn btn-outline-secondary" style="margin-left: 10px;">Удалить</button>
+                    
+                </div> -->
+            
+            <!-- <p>Виды доставки</p>
+            <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Грузы</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Посылки</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox3">Документы</label>
+                      </div> -->
+                                
+</div>
+</div>
+
+
+<div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+        <div class="card-header"> <h4 class="card-title"> <a href="j001.html">Иванов Иван Иванович</a> 
+          </h4></div>  <div class="card-body">
+            
+                <table class="table" >
+                        <thead>
+                            <tr>
+                        <td>
+                        ID
+                        </td>
+                        <td>
+                            001
+                        </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                Телефон
+                            </td>
+                            <td>
+                                89234234344
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>
+                                E-mail
+                            </td>
+                            <td>
+                                <p> psfdsdf@mail.com</p>
+                            </td>
+                            </tr>
+
+                            <tr>
+                            <td>
+                                Должность
+                            </td>
+                            <td>
+                                Администратор
+                            </td>
+                            </tr>
+
+                            </tbody>
+            </table>
+           
+</div>
+</div>
+
+
+<div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+        <div class="card-header"> <h4 class="card-title"> <a href="j001.html">Иванов Иван Иванович</a> 
+           </h4></div>
+            <div class="card-body">
+            
+                <table class="table" >
+                        <thead>
+                            <tr>
+                                <td>
+                                ID
+                                </td>
+                                <td>
+                                    001
+                                </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>
+                                        Телефон
+                                    </td>
+                                    <td>
+                                        89234234344
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>
+                                        E-mail
+                                    </td>
+                                    <td>
+                                        <p> psfdsdf@mail.com</p>
+                                    </td>
+                                    </tr>
+        
+                                    <tr>
+                                    <td>
+                                        Должность
+                                    </td>
+                                    <td>
+                                        Грузчик
+                                    </td>
+                                    </tr>
+        
+                                 
+                    </table>
+                    <!-- <div class="row" style="margin-left: 270px; margin-bottom: 10px;">
+                           <a href="finan.html"><button type="button" class="btn btn-primary" style="margin-left: 50px;">Посмотреть заработок</button></a> 
+                            <button type="button" class="btn btn-outline-secondary" style="margin-left: 10px;">Удалить</button>
+                            
+                        </div> -->
+                                        
+        </div>
+        </div>
+
+        <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+
+           <!-- HTML-код модального окна-->
+           <div id="myModal" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="width: 800px; margin-left: -140px;">
+                  <div class="modal-header">
+                   
+                    <h4 class="modal-title" style="margin-top: 5px;">Добавить авто</h4>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container" style="display: flex; justify-content: center; width: 100%; flex-direction: column;">
+                        <div class="card" style="width: 100%; margin: auto;">
+                                <h2 style="margin-left: 10px;">Сотрудник 001 </h2>
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                <table class="table" style="margin-left: 10px;">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                            ФИО
+                                            </td>
+                                            <td>
+                                                    <input type="text" class="form-control" id="usr" style="width: 250px;">
+                                            </td>
+                                          </tr>
+                                      
+                                          <tr>
+                                              <td>
+                                                  Телефон
+                                              </td>
+                                              <td>
+                                                    <input type="text" class="form-control" id="phone" style="width: 250px;">
+                                              </td>
+                                            </tr>
+                                       
+                                            <tr>
+                                                <td>
+                                                    E-mail
+                                                </td>
+                                                <td>
+                                                        <input type="text" class="form-control" id="E-mail" style="width: 250px;">
+                                               </td>
+                                              </tr>
+              
+                                            <tr>
+                                                    <td>
+                                                        Пароль
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="form-control" id="pwd" style="width: 250px;">
+                                                    </td>
+                                                </tr>
+        
+        
+                                                <tr>
+                                                        <td>
+                                                            Дата рождения
+                                                        </td>
+                                                        <td>
+                                                            <input type="date" class="form-control">
+                                                               
+                                                        </td>
+                                                    </tr>
+            
+                                                <tr>
+                                                        <td>
+                                                            Доолжность
+                                                        </td>
+                                                        <td>
+                                                            <select class="form-control">
+                                                                        <option selected>Грузчик</option>
+                                                                        <option value="1" >Администратор</option>
+                                                                    </select>
+                                                        </td>
+                                                    </tr>
+              
+                                                       
+                                               </tbody>
+                                </table>               
+                            </div>
+                            <div class="col-sm-8">
+                                <h4 style="margin-left: 200px; margin-top: -35px;">График работы</h4>
+                                    <div class="datepicker-here"  data-multiple-dates="23"
+                                    data-multiple-dates-separator=", "
+                                    data-position="right top" style="margin-left: 200px;" ></div>
+                                   <div style="display: flex; flex-direction: row;"><div style="width: 20px; height: 20px; background: rgb(70, 212, 255); margin: 10px 10px 0 210px;"></div>
+                                    <p style="margin: 10px 20px 0 5px;">Рабочий день</p> <p style="margin: 10px 0 0 0;">8:00 - 17:00</p> </div> 
+                                    
+                                    <div class="row" style="margin: 10px 0 10px 215px ; visibility: hidden;">
+                                            <a href="zayavki.html"><button type="button" class="btn btn-primary" style="width: 102px;">Заявки</button></a>
+                                           <a href="scedlue.html"> <button type="button" class="btn btn-primary" style="margin-left: 20px;">Расписание</button></a>
+                                        </div>
+                            </div>
+                            </div>
+                                
+                        </div>
+        </div>
+                                
+                    <!-- <p>Основная форма&hellip;</p> -->
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                  </div>
+                </div><!-- /.модальное окно-Содержание -->  
+              </div><!-- /.модальное окно-диалог -->  
+        </div>
+         
+        <!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
+        <script>
+        $(document).ready(function(){
+          //при нажатию на любую кнопку, имеющую класс .btn
+          $("#Modal").click(function() {
+            //открыть модальное окно с id="myModal"
+            $("#myModal").modal('show');
+          });
+        });
+        </script>
+  
+  <script>
+    $(document).ready(function(){
+  $('.open').hide();
+  $('.op').click(function() {
+  $('.open').slideToggle("slow");
+  }); });
+  </script>
+  
+                                          </div>
+                </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/datepicker.min.js" ></script>
+	<script>
+	window.onload=function(){ $(document).ready(function(){ // Запускать только после загрузки всего окна
+	
+	// Инициализация
+		$('#some_id_calendar').datepicker()
+	
+	})}
+	</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

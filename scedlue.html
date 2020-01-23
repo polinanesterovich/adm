@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Расписание</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+ <ul class="nav nav-pills" >
+    <li class="nav-item">
+        <a class="nav-link " href="clients.html">Клиенты</a>
+      </li>
+      <li class="nav-item">
+              <a href="zayavki.html">Заказы</a>
+            
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="joppers.html">Сотрудники</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="avto.html">Авто</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="sales.html">Акции</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="uslugi.html">Услуги</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="otzyvy.html">Отзывы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link " href="finan.html">Финансы</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link active" href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+      </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+            
+            <li class="breadcrumb-item"><a href="lkadm.html">Личный кабинет</a></li>
+            <li class="breadcrumb-item activem"><a href="#">Расписание</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 60%; flex-direction: column;">
+               
+                <div class="row">
+                        <div class="col-sm-4"> 
+                                <div class="row" style="margin-left: 20px; margin-bottom: 10px;">
+                                      <p>Сотрудник</p>   <select class="form-control">
+                                                <option selected>null</option>
+                                                <option value="1" >Иванов Иван Иванович</option>
+                                                <option value="2" >Петров Петр Петрович</option>
+                                                <option value="3" >Мармеладова Соня Романовна</option>
+                                            </select>
+        
+                                            <p style="margin-top: 5px;">Авто</p> <select class="form-control">
+                                                    <option selected>null</option>
+                                                    <option value="1" >Лада</option>
+                                                    <option value="1" >Мазда</option>
+                                                </select>
+                                    </div>
+                                    <h4 style="margin-left: 20px; width: 300px; ">График работы
+                                      <a href="j001.html"> <button type="button" class="btn btn-light" style="margin-left: 20px">Изменить</button></a></h4>
+                                    <div class="datepicker-here" id="some_id_calendar" 
+                                    
+                                    data-position="right top" style="margin-left: 20px;" ></div>
+                            </div>
+
+                            <div class="col-sm-6" style="margin-left: 100px;"> 
+                                    
+                                    <form style="border: 1px gray solid; height: 70%;">
+                                    
+
+                                    <div style="height: 20%; display: flex; flex-direction: column;justify-content: center; text-align: center; ">
+                                        
+                                    <p>Время и заявки</p>   <p> 8:00 - 17:00</p>
+                                    </div>
+                                    <hr>
+
+                                    <div style=" display: flex; flex-direction: column;justify-content: center; text-align: center;  ">
+
+                                            <!-- <button type="button" class="btn btn-light" style="margin:0 10px 10px 230px">Изменить</button> -->
+                                        <div style="display: flex; flex-direction: row; justify-content: center; text-align: center; margin-top: 30px;">
+                                             <p style="margin-top: 10px;">8:30</p> 
+                                           <a href="zayavka001.html"><button type="button" class="btn btn-primary" style="margin-left: 20px">Заявка</button></a> </div>
+                                   
+                                    <div style="display: flex; flex-direction: row; justify-content: center; text-align: center; margin-top: 15px; ">
+                                         <p style="margin-top: 10px;">10:30</p> 
+                                         <a href="zayavka001.html"> <button type="button" class="btn btn-primary" style="margin-left: 15px">Заявка</button></a></div>
+                                </div>
+                                <a href="obschedlue.html"><button type="button" class="btn btn-light" style="margin: 50px 0 10px 200px">Общее расписание</button></a>
+                                    </form> 
+                                   
+                                </div>
+
+                            </div>
+
+
+</div>
+</main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="js/datepicker.min.js" ></script>
+    <script>
+            window.onload=function(){ $(document).ready(function(){ // Запускать только после загрузки всего окна
+            
+            // Инициализация
+                $('#some_id_calendar').datepicker()
+                var disabledDays = [0, 6];
+
+$('#some_id_calendar').datepicker({
+    onRenderCell: function (date, cellType) {
+        if (cellType == 'day') {
+            var day = date.getDay(),
+                isDisabled = disabledDays.indexOf(day) != -1;
+
+            return {
+                disabled: isDisabled
+            }
+        }
+    }
+})
+            })}
+            </script>
+            
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

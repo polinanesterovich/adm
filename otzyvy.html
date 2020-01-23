@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Отзывы</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+ 
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+                <a class="nav-link " href="clients.html">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                      <a href="zayavki.html">Заказы</a>
+                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="joppers.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="avto.html">Авто</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="sales.html">Акции</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="uslugi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link  active" href="otzyvy.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="finan.html">Финансы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+              </li>
+      </ul> 
+
+<main>
+
+<ul class="breadcrumb">
+    
+        <li class="breadcrumb-item"><a href="lkadm.html">Личный кабинет</a></li>
+        <li class="breadcrumb-item activem"><a href="#">Отзывы</a></li>			  
+        
+    </ul> 
+    
+    
+    <div class="container" style="display: flex; justify-content: center; width: 50%; flex-direction: column;">
+        <div class="row">
+                <div class="col-sm-4"><h2>Отзывы</h2> </div>
+               <a> <div class="col-sm-8">
+                   <button type="button" class="btn btn-primary" id="new" style="margin-left: 260px; margin-top: 25px;" >Добавить новый</button></a></div>
+                </div>
+                
+  
+            <legend class="w-auto">Фильтр и поиск<a href="" class="op" data-toggle="collapse" style="margin-left: 330px; font-size: 14px;">Скрыть/Показать</a></legend>
+            <div class="open">
+        <div class="form-group">
+                <label for="formGroupExampleInput">ID</label>
+    <div class="row">
+        
+            <div class="col"> 
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="12355">
+            </div>
+            <div class="col">
+                    <select class="form-control">
+                        <option selected>По возрастанию</option>
+                        <option value="1" >По убыванию</option>
+                    </select>
+                </div>
+            </div>                        
+        </div>
+
+        <div class="form-group">
+                <label for="formGroupExampleInput">Дата</label>
+    <div class="row">
+        
+            <div class="col"> 
+                   <p>От</p> <input type="date" class="form-control" style="width: 150px;">
+                    
+                    </div>
+            <div class="col" style="margin-left: -300px;">
+                    <p>До</p><input type="date" class="form-control" style="width: 150px;">
+                </div>
+            </div>                        
+        </div>
+        <button type="button" class="btn btn-primary" style="margin: 0 0 10px 270px;">Поиск</button>
+            </div>
+        </form>
+        
+            
+
+    <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+    <div class="card-header"> <h4 class="card-title">ID 001
+      </h4>
+      
+      <a href="#"><button type="button" class="btn btn-primary" id="Modal" style="margin-left: 450px; margin-top: -10px;" >Редактировать</button></a></div>
+    <div class="card-body">
+
+    <table class="table" >
+    <thead>
+    <tr>
+        <td>
+        ФИО
+        </td>
+        <td>
+            <a href="client001.html" id="fio">Иванов Иван Иванович</a>
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                Телефон
+            </td>
+            <td>
+                <p id="phone">89234234344</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                E-mail
+            </td>
+            <td>
+                <p id="E-mail"> psfdsdf@mail.com</p>
+            </td>
+            </tr>
+
+            <tr>
+            <td>
+                Отзыв
+            </td>
+            <td>
+                    <p id="text">Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+                    <!-- <textarea class="form-control" rows="5" id="comment"></textarea> -->
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Дата
+                </td>
+                <td>
+                      07.07.17 г.
+                </td>
+                </tr>
+
+                <tr>
+                        <td>
+                            Статус
+                        </td>
+                        <td>
+                             <p>Опубликован</p>
+                        </td>
+                        </tr>
+            </tbody>
+    </table>
+    <a  id="delete"><button type="button" class="btn btn-outline-secondary" style=" margin-left: 499px; margin-right: 20px; margin-top: -10px;">Удалить</button></a>
+    </div>
+    </div>
+
+
+    <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+            <div class="card-header"> <h4 class="card-title">ID 001
+              </h4>
+              <a><button type="button" class="btn btn-primary" id="Modal2" style="margin-left: 450px; margin-top: -10px;" >Редактировать</button></a></div>
+             <div class="card-body">
+        
+            <table class="table" >
+            <thead>
+                <tr>
+                    <td>
+                    ФИО
+                    </td>
+                    <td>
+                        <a href="client001.html" id="fio2">Иванов Иван Иванович</a>
+                    </td>
+                    </tr>
+            
+                    <tr>
+                        <td>
+                            Телефон
+                        </td>
+                        <td>
+                            <p id="phone2">89234234344</p>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td>
+                            E-mail
+                        </td>
+                        <td>
+                            <p id="E-mail2"> psfdsdf@mail.com</p>
+                        </td>
+                        </tr>
+            
+                        <tr>
+                        <td>
+                            Отзыв
+                        </td>
+                        <td>
+                                <p id="text2"> оп ля</p>
+                                <!-- <textarea class="form-control" rows="5" id="comment"></textarea> -->
+                        </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                Дата
+                            </td>
+                            <td>
+                                  07.07.17 г.
+                            </td>
+                            </tr>
+            
+                            <tr>
+                                    <td>
+                                        Статус
+                                    </td>
+                                    <td>
+                                         <p>Опубликован</p>
+                                    </td>
+                                    </tr>
+                    </tbody>
+            </table>
+            <a  id="delete2"><button type="button" class="btn btn-outline-secondary" style=" margin-left: 499px; margin-right: 20px; margin-top: -10px;">Удалить</button></a>
+            </div>
+            </div>
+
+
+            <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+                    <div class="card-header"> <h4 class="card-title">ID 001
+                       </h4> 
+                       <a ><button type="button" class="btn btn-primary" id="Modal3" style="margin-left: 450px; margin-top: -10px;" >Редактировать</button></a></div>
+                     <div class="card-body">
+                
+                    <table class="table" >
+                    <thead>
+                        <tr>
+                            <td>
+                            ФИО
+                            </td>
+                            <td>
+                                <a href="client001.html" id="fio3">Иванов Иван Иванович</a>
+                            </td>
+                            </tr>
+                    
+                            <tr>
+                                <td>
+                                    Телефон
+                                </td>
+                                <td>
+                                    <p id="phone3">89234234344</p>
+                                </td>
+                            </tr>
+                    
+                            <tr>
+                                <td>
+                                    E-mail
+                                </td>
+                                <td>
+                                    <p id="E-mail3"> psfdsdf@mail.com</p>
+                                </td>
+                                </tr>
+                    
+                                <tr>
+                                <td>
+                                    Отзыв
+                                </td>
+                                <td>
+                                        <p id="text3">оба на</p>
+                                        <!-- <textarea class="form-control" rows="5" id="comment"></textarea> -->
+                                </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td>
+                                        Дата
+                                    </td>
+                                    <td>
+                                          07.07.17 г.
+                                    </td>
+                                    </tr>
+                    
+                                    <tr>
+                                            <td>
+                                                Статус
+                                            </td>
+                                            <td>
+                                                 <p>Опубликован</p>
+                                            </td>
+                                            </tr>
+                            </tbody>
+                    </table>
+                    <a  id="delete3"><button type="button" class="btn btn-outline-secondary" style=" margin-left: 499px; margin-right: 20px; margin-top: -10px;">Удалить</button></a>
+                    </div>
+                    </div>
+
+    <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+    <ul class="pagination">
+    <li class="page-item">
+    <a class="page-link" href="#!" aria-label="Previous">
+    <span aria-hidden="true">&laquo;</span>
+    <span class="sr-only">Previous</span>
+    </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#!">1</a></li>
+    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#!" aria-label="Next">
+    <span aria-hidden="true">&raquo;</span>
+    <span class="sr-only">Next</span>
+    </a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+
+     <!-- HTML-код модального окна-->
+     <div id="myModal" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="margin-left: -160px; width: 700px;">
+              <div class="modal-header">
+               
+                <h4 class="modal-title" style="margin-top: 5px;">Редактировать отзыв</h4>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  
+                <div class="container" style="display: flex; justify-content: center; width: 100%; flex-direction: column;">
+                    <div class="card" style="width: 100%; margin: auto;">
+                            <h2 style="margin-left: 10px;">Отзыв 001 </h2>
+                            <div class="row">
+                                    <div class="col-sm-4"> 
+    
+                                            <img src="image\im.png" class="float-left" style="width: 100px; height: 100px; margin-left: 50px;">
+                                            <a href=# ><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin: 5px 0 0 100px; font-size: 20px;"></span></a>
+                                            <a href=#><span class="glyphicon glyphicon-trash" aria-hidden="true" style="font-size: 20px; margin-left: 8px;"></span></a>
+                                    </div>
+    
+                                    <div class="col-sm-4">
+                                            <label for="formGroupExampleInput">ФИО</label>
+                                  <input type="text" class="form-control" id="fioo" style="width: 200px; margin-bottom: 10px;">
+                                  <label for="formGroupExampleInput">Телефон</label>
+                                  <input type="text" class="form-control" id="phoneo" style="width: 200px; margin-bottom: 10px;">
+                                  <label for="formGroupExampleInput">E-mail</label>
+                                  <input type="text" class="form-control" id="em" style="width: 200px; margin-bottom: 10px;">
+                                  
+                          
+                        </div>
+                        <div class="col-sm-4">
+                                <label for="formGroupExampleInput" style="margin-top: 140px;">Количество звезд</label>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons"  >
+                                        <label class="btn btn-secondary active">
+                                          <input type="radio" name="options" id="option1" autocomplete="off" checked> 1 
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                          <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> 3
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> 4
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> 5
+                                        </label>
+                                      </div>
+                          
+                            </div>
+    
+                            <div class="col-sm-5" style="margin: 10px 0 0 20px;"> 
+                                    <label>Отзыв клиента</label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    
+                            </div>
+    
+    
+                            <div class="col-sm-5" style="margin: 10px 0 0 20px;"> 
+                            <label >Комментарий админа </label>
+                                <textarea class="form-control" rows="5" id="commentad"></textarea>
+                            </div>
+    
+                            
+    
+                           
+                                              </div>
+                                             
+                                                       
+                                                    </div>
+                                     
+                        </div>                
+                <!-- <p>Основная форма&hellip;</p> -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Сохранить и закрыть</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Сохранить и опубликовать</button>
+               
+              </div>
+            </div><!-- /.модальное окно-Содержание -->  
+          </div><!-- /.модальное окно-диалог -->  
+     </div>
+
+
+
+          <div id="mynew" class="modal fade">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="width: 150%; margin-left: -25%;">
+                  <div class="modal-header">
+                   
+                    <h4 class="modal-title" style="margin-top: 5px;">Добавить отзыв</h4>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                   
+                    <div class="container" style="display: flex; justify-content: center; width: 100%; flex-direction: column;">
+                        <div class="card" style="width: 100%; margin: auto;">
+                                <h2 style="margin-left: 10px;">Отзыв 001 </h2>
+                                <div class="row">
+                                        <div class="col-sm-4"> 
+        
+                                                <img src="image\im.png" class="float-left" style="width: 100px; height: 100px; margin-left: 50px;">
+                                                <a href=# ><span class="glyphicon glyphicon-search" aria-hidden="true" style="margin: 5px 0 0 100px; font-size: 20px;"></span></a>
+                                                <a href=#><span class="glyphicon glyphicon-trash" aria-hidden="true" style="font-size: 20px; margin-left: 8px;"></span></a>
+                                        </div>
+        
+                                        <div class="col-sm-4">
+                                                <label for="formGroupExampleInput">ФИО</label>
+                                      <input type="text" class="form-control" id="usr" style="width: 200px; margin-bottom: 10px;">
+                                      <label for="formGroupExampleInput">Телефон</label>
+                                      <input type="text" class="form-control" id="usr" style="width: 200px; margin-bottom: 10px;">
+                                      <label for="formGroupExampleInput">E-mail</label>
+                                      <input type="text" class="form-control" id="usr" style="width: 200px; margin-bottom: 10px;">
+                                      
+                              
+                            </div>
+                            <div class="col-sm-4">
+                                    <label for="formGroupExampleInput" style="margin-top: 140px;">Количество звезд</label>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons"  >
+                                            <label class="btn btn-secondary active">
+                                              <input type="radio" name="options" id="option1" autocomplete="off" checked> 1 
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                              <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> 3
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> 4
+                                            </label>
+                                            <label class="btn btn-secondary">
+                                            <input type="radio" name="options" id="option2" autocomplete="off"> 5
+                                            </label>
+                                          </div>
+                              
+                                </div>
+        
+                                <div class="col-sm-5" style="margin: 10px 0 0 20px;"> 
+                                        <label>Отзыв клиента</label>
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        
+                                </div>
+        
+        
+                                <div class="col-sm-5" style="margin: 10px 0 0 20px;"> 
+                                <label >Комментарий админа </label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+        
+                                
+        
+                                
+                    <!-- <p>Основная форма&hellip;</p> -->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Сохранить и закрыть</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Сохранить и опубликовать</button>
+                  </div>
+                </div><!-- /.модальное окно-Содержание -->  
+              </div><!-- /.модальное окно-диалог -->  
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              
+        <!-- HTML-код модального окна-->
+  <div id="del" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+           
+            <h4 class="modal-title" style="margin-top: 5px;">Подтверждение удаления</h4>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+               <p>Вы уверенны, что хотите удалить объект?</p>
+            <!-- <p>Основная форма&hellip;</p> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Да</button>
+            <button type="button" id="save" class="btn btn-primary" data-dismiss="modal">Отмена</button>
+          </div>
+        </div><!-- /.модальное окно-Содержание -->  
+      </div><!-- /.модальное окно-диалог -->  
+        <!-- Скрипт, привязывающий событие click, открывающее модальное окно, к элементам, имеющим класс .btn -->
+        <script>
+        $(document).ready(function(){
+     
+
+      //при нажатию на любую кнопку, имеющую класс .btn
+      $("#new").click(function() {
+        //открыть модальное окно с id="myModal"
+        $("#mynew").modal('show');
+      });
+    });
+    </script>
+  
+    </main>
+    <script>
+        $(document).ready(function(){ 
+            
+          //при нажатию на любую кнопку, имеющую класс .btn
+          $("#Modal").click(function(e) {
+            //открыть модальное окно с id="myModal"
+            // $("#myModal").modal('show');
+            // $("#uid").val($editRow.data('user-id'));
+    
+          $("#fioo").val($("#fio").text());
+          $("#phoneo").val($("#phone").text());
+          $("#em").val($("#E-mail").text());
+          $("#comment").val($("#text").text());
+
+          $("#myModal").modal('show');
+  });
+          // $("#opisanye").val($("#zay").text());
+          $("#Modal2").click(function(e) {
+            //открыть модальное окно с id="myModal"
+            // $("#myModal").modal('show');
+            // $("#uid").val($editRow.data('user-id'));
+    
+          $("#fioo").val($("#fio2").text());
+          $("#phoneo").val($("#phone2").text());
+          $("#em").val($("#E-mail2").text());
+          $("#comment").val($("#text2").text());
+          // $("#opisanye").val($("#zay").text());
+  
+          $("#myModal").modal('show');
+  });
+
+  $("#Modal3").click(function(e) {
+            //открыть модальное окно с id="myModal"
+            // $("#myModal").modal('show');
+            // $("#uid").val($editRow.data('user-id'));
+    
+          $("#fioo").val($("#fio3").text());
+          $("#phoneo").val($("#phone3").text());
+          $("#em").val($("#E-mail3").text());
+          $("#comment").val($("#text3").text());
+          // $("#opisanye").val($("#zay").text());
+  
+          $("#myModal").modal('show');
+  });
+     
+
+ 
+          $("#save").click(function(){
+           
+            $("#fio").text($("#fioi").val());
+          $("#phone").text($("#phonei").val());
+          $("#E-mail").text($("#E-maili").val());
+          $("#pas").text($("#pwd").val());
+          $(this).closest('.modal').modal('hide');})
+          });
+          $("#delete").click(function(e) {
+          //открыть модальное окно с id="myModal"
+          // $("#myModal").modal('show');
+          // $("#uid").val($editRow.data('user-id'));
+  
+        
+
+
+        $("#del").modal('show');
+});
+
+$("#delete2").click(function(e) {
+          //открыть модальное окно с id="myModal"
+          // $("#myModal").modal('show');
+          // $("#uid").val($editRow.data('user-id'));
+  
+        
+
+
+        $("#del").modal('show');
+});
+
+$("#delete3").click(function(e) {
+          //открыть модальное окно с id="myModal"
+          // $("#myModal").modal('show');
+          // $("#uid").val($editRow.data('user-id'));
+  
+        
+
+
+        $("#del").modal('show');
+});
+        </script>
+
+         <script>
+        $(document).ready(function(){
+    $('.open').hide();
+$('.op').click(function() {
+    $('.open').slideToggle("slow");
+  }); });
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

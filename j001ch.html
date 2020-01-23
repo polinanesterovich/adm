@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <title>Сотрудник</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+                <a class="nav-link " href="clients.html">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                      <a href="zayavki.html">Заказы</a>
+                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="joppers.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="avto.html">Авто</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="sales.html">Акции</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="uslugi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="otzyvy.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="finan.html">Финансы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+              </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+          
+            <li class="breadcrumb-item"><a href="joppers.html">Сотрудники</a></li>
+            <li class="breadcrumb-item activem"><a href="#">Сотрудник 001</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 80%; flex-direction: column;">
+                <div class="card" style="width: 90%; margin: auto;">
+                        <h2 style="margin-left: 10px;">Сотрудник 001 </h2>
+                        <div class="row">
+                                <div class="col-sm-4">
+                        <table class="table" style="margin-left: 10px;">
+                            <thead>
+                                <tr>
+                                    <td>
+                                    ФИО
+                                    </td>
+                                    <td>
+                                            <input type="text" class="form-control" id="usr" style="width: 250px;">
+                                    </td>
+                                  </tr>
+                              
+                                  <tr>
+                                      <td>
+                                          Телефон
+                                      </td>
+                                      <td>
+                                            <input type="text" class="form-control" id="phone" style="width: 250px;">
+                                      </td>
+                                    </tr>
+                               
+                                    <tr>
+                                        <td>
+                                            E-mail
+                                        </td>
+                                        <td>
+                                                <input type="text" class="form-control" id="E-mail" style="width: 250px;">
+                                       </td>
+                                      </tr>
+      
+                                    <tr>
+                                            <td>
+                                                Пароль
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" id="pwd" style="width: 250px;">
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                                <td>
+                                                    Дата рождения
+                                                </td>
+                                                <td>
+                                                    <input type="date" class="form-control">
+                                                       
+                                                </td>
+                                            </tr>
+    
+                                        <tr>
+                                                <td>
+                                                    Доолжность
+                                                </td>
+                                                <td>
+                                                    <select class="form-control">
+                                                                <option selected>Грузчик</option>
+                                                                <option value="1" >Администратор</option>
+                                                            </select>
+                                                </td>
+                                            </tr>
+      
+                                               
+                                       </tbody>
+                        </table>               
+                    </div>
+                    <div class="col-sm-8">
+                        <h4 style="margin-left: 200px; margin-top: -35px;">График работы</h4>
+                            <div class="datepicker-here"  data-multiple-dates="23"
+                            data-multiple-dates-separator=", "
+                            data-position="right top" style="margin-left: 200px;" ></div>
+                           <div style="display: flex; flex-direction: row;"><div style="width: 20px; height: 20px; background: rgb(70, 212, 255); margin: 10px 10px 0 210px;"></div>
+                            <p style="margin: 10px 20px 0 5px;">Рабочий день</p> <p style="margin: 10px 0 0 0;">8:00 - 17:00</p> </div> 
+                            
+                            <div class="row" style="margin: 10px 0 10px 215px ; visibility: hidden;">
+                                    <a href="zayavki.html"><button type="button" class="btn btn-primary" style="width: 102px;">Заявки</button></a>
+                                   <a href="scedlue.html"> <button type="button" class="btn btn-primary" style="margin-left: 20px;">Расписание</button></a>
+                                </div>
+                    </div>
+                    </div>
+                        <div class="row" style="margin-left: 400px; margin-bottom: 10px;">
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <button type="button" class="btn btn-outline-secondary"  style="margin-left: 300px;">Удалить</button>
+                    </div>
+                </div>
+</div>
+
+</main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+	<script src="js/datepicker.min.js" ></script>
+	<script>
+	window.onload=function(){ $(document).ready(function(){ // Запускать только после загрузки всего окна
+	
+	// Инициализация
+		$('#some_id_calendar').datepicker()
+	
+	})}
+	</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

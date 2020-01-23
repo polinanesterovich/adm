@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+</head>
+<body>
+<html>
+  <head>
+    <title>Первый шаблон</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/dopstyle.css" rel="stylesheet" media="screen">  
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+ </head>
+ <body>
+ <form name="myForm" id="myForm" action="" method="post">
+    <div class="container">
+        <div class="row otstup">    
+            <div class="col-md-9">
+                <h2>Обычная форма</h2>
+                <form role="form">
+ 
+                  <div class="form-group">
+                    <label for="login">login</label>
+        <input type="text" class="form-control" id="login" name="login" value="" placeholder="Введите login">
+                  </div>
+                  <button type="submit" class="btn btn-default">Войти</button>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            jQuery.extend(jQuery.validator.messages, {
+                required: "Поле не заполнено",
+                rangelength: jQuery.validator.format("Длина логина должна составлять от 5 до 20 символов")
+            });
+            $(document).ready(function(){
+              $("#myForm").validate({
+                rules: {
+                  login: {
+                      required: true,
+                    rangelength: [5, 20]
+             
+                    },
+             
+                  }
+              });
+            });
+        </script>
+        </div>
+        </form>
+</body>
+</html>

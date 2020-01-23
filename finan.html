@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Финансы</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+ 
+
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+                <a class="nav-link " href="clients.html">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                      <a href="zayavki.html">Заказы</a>
+                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="joppers.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="avto.html">Авто</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="sales.html">Акции</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="uslugi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="otzyvy.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" href="finan.html">Финансы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="lkadm.html" style="margin-left: 300px;">Личный кабинет</a>
+              </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+            
+            <li class="breadcrumb-item"><a href="lkadm.html">Личный кабинет</a></li>
+            <li class="breadcrumb-item activem"><a href="finan.html">Финансы</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 57%; flex-direction: column;">
+            <div class="row">
+                    <div class="col-sm-4" style="margin-left: -17px;"><h2>Финансы</h2> </div>
+                    
+                   
+                    <form>
+                            <legend class="w-auto">Фильтр и поиск</legend>
+                    
+                    <div class="row">
+                            <div class="col-sm-4" style="margin-left: 14px;"> 
+                             <p style="margin-top: 3px;">Сотрудник</p>
+                             <select class="form-control">
+                                           
+                                            <option value="1" >Иванов Иван Иванович</option>
+                                            <option value="2" >Петров Петр Петрович</option>
+                                            <option value="3" >Федоров Федор Федорович</option>
+                                        </select>
+                            
+                                        <p style="margin-top: 3px;">Машина</p>
+                                        <select class="form-control">
+                                            
+                                            <option value="1" >Лада</option>
+                                            <option value="2" >Мазда</option>
+                                            <option value="3" >Тайота</option>
+                                        </select>
+                              
+                                        <p style="margin-top: 3px;">Услуга</p>
+                                        <select class="form-control">
+                                                
+                                                <option value="1" >Доставка посылок</option>
+                                                <option value="2" >Доставка грузов</option>
+                                                <option value="3" >Доставка документов</option>
+                                            </select>
+                                  </div>
+
+                                  <div class="col-sm-4"> 
+                                        <div class="row" style="margin-left: 10px; margin-bottom: 10px;">
+                                                <p style="margin-top: 3px;">Дата от  </p> <input type="date" class="form-control" >
+                                                <p style="margin-top: 3px;">Дата до  </p><input type="date" class="form-control"> 
+                                            </div>
+                                            <div class="form-group" style="margin-left: 10px; margin-top: -6px;" >
+                                                    <p>Найти по ID</p>
+                                                    <input type="text" class="form-control" placeholder="002" >
+                                                  </div>
+                                            </div>
+          
+                                    <div class="col-sm-3">
+                                        <p>Сортировать по</p>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+                                            <label class="custom-control-label" for="defaultUnchecked">ID</label>
+                                          </div>
+                              
+                                          <!-- Default checked -->
+                                          <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+                                            <label class="custom-control-label" for="defaultChecked">Дата</label>
+                                          </div>
+                                            
+                  
+                                     </div>
+                        </div>
+                    
+                       
+          
+            <button type="button" class="btn btn-primary" style="margin: 0 0 10px 310px;">Поиск</button>
+            </form>
+          </div>
+          <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(238, 238, 238);">
+
+                <div class="card-header"> <h4 class="card-title"> <a href="zayavka001.html">ID 001 </a> </h4> 
+                        <!-- <div class="row" style="margin-left: 400px; ">
+                                <a href="zayavka001.html"><button type="button" class="btn btn-primary" style="margin-left: 70px;">Открыть заявку</button></a>
+                               
+                                
+                            </div> -->
+                     </div>
+                <div class="card-body">
+            
+                <table class="table" >
+                <thead>
+                <tr>
+                    <td>
+                    ФИО клиента
+                    </td>
+                    <td>
+                        <a href="client001.html">Иванов Иван Иванович</a>
+                    </td>
+                    </tr>
+            
+                    <tr>
+                        <td>
+                            Телефон
+                        </td>
+                        <td>
+                           5452354234
+                                <!-- <input type="date"  class="col-5" name="calendar" > -->
+                        </td>
+                    </tr>
+            
+                        <tr>
+                        <td>
+                            Вид доставки
+                        </td>
+                        <td>
+                                Посылка
+                        </td>
+                        </tr>
+            
+                        <tr>
+                            <td>
+                                Трек номер
+                            </td>
+                            <td>
+                                   12334
+                                    
+                            </td>
+                            </tr>
+            
+                            <tr>
+                                <td>
+                                    Стоимость
+                                </td>
+                                <td>
+                                        2000
+                                       
+                                </td>
+                                </tr>
+
+                                <tr>
+                                        <td>
+                                            Дата
+                                        </td>
+                                        <td>
+                                               12.04.2019
+                                               
+                                        </td>
+                                        </tr>
+                        </tbody>
+                </table>
+                
+                </div>
+                </div>
+
+
+                <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(238, 238, 238);">
+
+                        <div class="card-header"> <h4 class="card-title"> <a href="zayavka001.html">ID 002</a>  </h4> 
+                                <!-- <div class="row" style="margin-left: 400px; ">
+                                        <a href="zayavka001.html"><button type="button" class="btn btn-primary" style="margin-left: 70px;">Открыть заявку</button></a>
+                               
+                                        
+                                    </div> -->
+                             </div>
+                        <div class="card-body">
+                    
+                        <table class="table" >
+                        <thead>
+                        <tr>
+                            <td>
+                            ФИО клиента
+                            </td>
+                            <td>
+                                <a href="client001.html">Иванов Иван Иванович</a>
+                            </td>
+                            </tr>
+                    
+                            <tr>
+                                <td>
+                                    Телефон
+                                </td>
+                                <td>
+                                   5452354234
+                                        <!-- <input type="date"  class="col-5" name="calendar" > -->
+                                </td>
+                            </tr>
+                    
+                                <tr>
+                                <td>
+                                    Вид доставки
+                                </td>
+                                <td>
+                                        Посылка
+                                </td>
+                                </tr>
+                    
+                                <tr>
+                                    <td>
+                                        Трек номер
+                                    </td>
+                                    <td>
+                                           12334
+                                            
+                                    </td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td>
+                                            Стоимость
+                                        </td>
+                                        <td>
+                                                2000
+                                               
+                                        </td>
+                                        </tr>
+        
+                                        <tr>
+                                                <td>
+                                                    Дата
+                                                </td>
+                                                <td>
+                                                       12.04.2019
+                                                       
+                                                </td>
+                                                </tr>
+                                </tbody>
+                        </table>
+                        
+                        </div>
+                        </div>
+
+                        
+                        <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(238, 238, 238);">
+
+                                <div class="card-header"> <h4 class="card-title"> <a href="zayavka001.html">ID 003 </a> </h4> 
+                                        <!-- <div class="row" style="margin-left: 400px; ">
+                                                <a href="zayavka001.html"><button type="button" class="btn btn-primary" style="margin-left: 70px;">Открыть заявку</button></a>
+                               
+                                                
+                                            </div> -->
+                                     </div>
+                                <div class="card-body">
+                            
+                                <table class="table" >
+                                <thead>
+                                <tr>
+                                    <td>
+                                    ФИО клиента
+                                    </td>
+                                    <td>
+                                        <a href="client001.html">Иванов Иван Иванович</a>
+                                    </td>
+                                    </tr>
+                            
+                                    <tr>
+                                        <td>
+                                            Телефон
+                                        </td>
+                                        <td>
+                                           5452354234
+                                                <!-- <input type="date"  class="col-5" name="calendar" > -->
+                                        </td>
+                                    </tr>
+                            
+                                        <tr>
+                                        <td>
+                                            Вид доставки
+                                        </td>
+                                        <td>
+                                                Посылка
+                                        </td>
+                                        </tr>
+                            
+                                        <tr>
+                                            <td>
+                                                Трек номер
+                                            </td>
+                                            <td>
+                                                   12334
+                                                    
+                                            </td>
+                                            </tr>
+                            
+                                            <tr>
+                                                <td>
+                                                    Стоимость
+                                                </td>
+                                                <td>
+                                                        2000
+                                                       
+                                                </td>
+                                                </tr>
+                
+                                                <tr>
+                                                        <td>
+                                                            Дата
+                                                        </td>
+                                                        <td>
+                                                               12.04.2019
+                                                               
+                                                        </td>
+                                                        </tr>
+                                        </tbody>
+                                </table>
+                                
+                                </div>
+                                </div>
+                
+<h4 style="margin-left: 580px;">Итог: 6000 р.</h4>
+        <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+            <ul class="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#!" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </li>
+            </ul>
+            </nav>
+        </div>
+                </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

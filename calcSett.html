@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Настройка калькулятора</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+          <a class="nav-link" href="#">Клиенты</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#">Заказы</a>
+              </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Сотрудники</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Авто</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#">Акции</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#">Услуги</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#">Отзывы</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#">Финансы</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link  active" href="#" style="margin-left: 300px;">Личный кабинет</a>
+        </li>
+      </ul> 
+
+<main>
+
+    <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="admorders.html">Администрирование</a></li>
+            <li class="breadcrumb-item"><a href="admorders.html">Личный кабинет</a></li>
+            <li class="breadcrumb-item activem"><a href="admworkers.html">Настройка калькулятора</a></li>			  
+            
+        </ul>
+        
+        
+        <div class="container" style="display: flex; justify-content: center; width: 80%; flex-direction: column;">
+                <div class="card" style="width: 90%; margin: auto;">
+                        <h2 style="margin-left: 10px;">Настройка калькулятора </h2>
+                        <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Услуга</th>
+                                    <th scope="col" >Вес до </th>
+                                    <th scope="col">Стоимость<br> 1кг, руб.</th>
+                                    <th scope="col">Стоимость<br> 1м3, руб.</th>
+                                    <th scope="col">Стоимость<br> 5км, руб.</th>
+                                    <th scope="col">Стоимость<br> 10мин, руб.</th>
+                                    <th scope="col"></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">
+                                      <select class="form-control" style="width: 160px;">
+                                                    <option selected>Доставка грузов</option>
+                                                    <option value="1" >Доставка посылок</option>
+                                                    <option value="1" >Доставка документов</option>
+                                                </select>
+                                            </th>
+                                    <td><input type="text" class="form-control"  style="width: 40px;"></td>
+                                    <td><input type="text" class="form-control"  style="width: 40px;"></td>
+                                    <td><input type="text" class="form-control"  style="width: 40px;"></td>
+                                    <td><input type="text" class="form-control"  style="width: 40px;"></td>
+                                    <td><input type="text" class="form-control"  style="width: 40px;"></td>
+                                    
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                       
+                    
+                             
+                                <div class="row" style="margin-left: 400px; margin-bottom: 10px;">
+                                        <button type="button" class="btn btn-primary">Сохранить</button>
+                                       
+                                    </div>
+            </div>
+        </div>
+</main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>

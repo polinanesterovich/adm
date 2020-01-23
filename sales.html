@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Акции</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+ 
+ <ul class="nav nav-pills" >
+        <li class="nav-item">
+                <a class="nav-link " href="clients.html">Клиенты</a>
+              </li>
+              <li class="nav-item">
+                      <a href="zayavki.html">Заказы</a>
+                    
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="joppers.html">Сотрудники</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="avto.html">Авто</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link active" href="sales.html">Акции</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="uslugi.html">Услуги</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="otzyvy.html">Отзывы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="finan.html">Финансы</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " id="i" href="lkadm.html" >Личный кабинет</a>
+              </li>
+      </ul> 
+
+<main>
+
+ <ul class="breadcrumb">
+        
+        <li class="breadcrumb-item"><a href="lkadm.html">Личный кабинет</a></li>
+        <li class="breadcrumb-item activem"><a href="#">Акции</a></li>			  
+        
+    </ul> 
+    
+    
+    <div class="conta" >
+        <div class="row">
+                <div class="col-sm-8"><h2>Акции <a href="sale001.html">
+                    <button type="button" class="btn btn-primary" style="margin-left: 20px; margin-top: 5px;" >Добавить новую</button></a></h2> </div>
+                <div class="col-sm-4">
+                    </div>
+                </div>
+                
+    <form>
+            <legend class="w-auto">Фильтр и поиск</legend>
+            <div class="form-group">
+                    <label for="formGroupExampleInput">Название</label>
+        <div class="row">
+            
+                <div class="col"> 
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Для студентов">
+                </div>
+                <div class="col">
+                        <select class="form-control">
+                            <option selected>По алфавиту</option>
+                            <option value="1" >В обратном порядке</option>
+                        </select>
+                    </div>
+                </div>                        
+            </div>
+        <div class="form-group">
+                <label for="formGroupExampleInput">ID</label>
+    <div class="row">
+        
+            <div class="col"> 
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="12355">
+            </div>
+            <div class="col">
+                    <select class="form-control">
+                        <option selected>По возрастанию</option>
+                        <option value="1" >По убыванию</option>
+                    </select>
+                </div>
+            </div>                        
+        </div>
+
+        <div class="form-group">
+                <label for="formGroupExampleInput">Дата</label>
+    <div class="row" >
+        
+            <div class="col"> 
+                   <p>От</p>  <input type="date" class="form-control" style="width: 150px;">
+                    
+                    </div>
+            <div class="col" style="margin-left: 00px;">
+                    <p>До</p> <input type="date" class="form-control" style="width: 150px;">
+                </div>
+            </div>                        
+        </div>
+        <button type="button" class="btn btn-primary" style="margin: 0 0 10px 270px;">Поиск</button>
+        </form>
+        
+            
+
+    <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+        
+    <div class="card-header"> <h4 class="card-title"><a href="sale01.html">Скидка для студентов</a> <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-top: 10px;">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> Скрыть
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Показать
+            </label>
+          </div></h4></div>
+    <div class="card-body">
+
+    <table class="table" >
+    <thead>
+    <tr>
+        <td>
+        ID
+        </td>
+        <td>
+            001
+        </td>
+        </tr>
+
+        <tr>
+            <td>
+                Дата начала
+            </td>
+            <td>
+                07.02.2019
+                    <!-- <input type="date"  class="col-5" name="calendar" > -->
+            </td>
+        </tr>
+
+            <tr>
+            <td>
+                Дата конца
+            </td>
+            <td>
+                   07.08.2019
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Описание
+                </td>
+                <td>
+                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                        
+                </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Скидка
+                    </td>
+                    <td>
+                            10%
+                    </td>
+                    </tr>
+            </tbody>
+    </table>
+  
+    </div>
+    </div>
+
+
+    <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+        
+            <div class="card-header"> <h4 class="card-title"><a href="sale01.html">Скидка для студентов</a> <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-top: 10px;">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Скрыть
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Показать
+                    </label>
+                  </div></h4></div>
+            <div class="card-body">
+        
+            <table class="table" >
+            <thead>
+            <tr>
+                <td>
+                ID
+                </td>
+                <td>
+                    001
+                </td>
+                </tr>
+        
+                <tr>
+                    <td>
+                        Дата начала
+                    </td>
+                    <td>
+                        07.02.2019
+                            <!-- <input type="date"  class="col-5" name="calendar" > -->
+                    </td>
+                </tr>
+        
+                    <tr>
+                    <td>
+                        Дата конца
+                    </td>
+                    <td>
+                           07.08.2019
+                    </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            Описание
+                        </td>
+                        <td>
+                                Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                
+                        </td>
+                        </tr>
+        
+                        <tr>
+                            <td>
+                                Скидка
+                            </td>
+                            <td>
+                                    10%
+                            </td>
+                            </tr>
+                    </tbody>
+            </table>
+          
+            </div>
+            </div>
+
+            <div class="card " style="width: 100%; margin: auto; margin-bottom: 20px; background: rgb(241, 241, 241);">
+        
+                    <div class="card-header"> <h4 class="card-title"><a href="sale01.html">Скидка для студентов</a> <div class="btn-group btn-group-toggle" data-toggle="buttons" style="margin-top: 10px;">
+                            <label class="btn btn-secondary active">
+                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Скрыть
+                            </label>
+                            <label class="btn btn-secondary">
+                              <input type="radio" name="options" id="option2" autocomplete="off"> Показать
+                            </label>
+                          </div></h4></div>
+                    <div class="card-body">
+                
+                    <table class="table" >
+                    <thead>
+                    <tr>
+                        <td>
+                        ID
+                        </td>
+                        <td>
+                            001
+                        </td>
+                        </tr>
+                
+                        <tr>
+                            <td>
+                                Дата начала
+                            </td>
+                            <td>
+                                07.02.2019
+                                    <!-- <input type="date"  class="col-5" name="calendar" > -->
+                            </td>
+                        </tr>
+                
+                            <tr>
+                            <td>
+                                Дата конца
+                            </td>
+                            <td>
+                                   07.08.2019
+                            </td>
+                            </tr>
+                
+                            <tr>
+                                <td>
+                                    Описание
+                                </td>
+                                <td>
+                                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                        Bootstrap поддерживает все типы входных данных HTML5: текст, пароль, DateTime, DateTime-Local.
+                                        
+                                </td>
+                                </tr>
+                
+                                <tr>
+                                    <td>
+                                        Скидка
+                                    </td>
+                                    <td>
+                                            10%
+                                    </td>
+                                    </tr>
+                            </tbody>
+                    </table>
+                  
+                    </div>
+                    </div>
+
+    <nav aria-label="Page navigation example" style="display: flex; justify-content: center;">
+    <ul class="pagination">
+    <li class="page-item">
+    <a class="page-link" href="#!" aria-label="Previous">
+    <span aria-hidden="true">&laquo;</span>
+    <span class="sr-only">Previous</span>
+    </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#!">1</a></li>
+    <li class="page-item"><a class="page-link" href="#!">2</a></li>
+    <li class="page-item"><a class="page-link" href="#!">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#!" aria-label="Next">
+    <span aria-hidden="true">&raquo;</span>
+    <span class="sr-only">Next</span>
+    </a>
+    </li>
+    </ul>
+    </nav>
+    </div>
+    </main>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
